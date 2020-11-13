@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vòng lặp For</title>
+</head>
+<body>
+<h3>Bài 1</h3>
+<input type="text" id="num">
+<input type="button" onclick="tinhtong();" value="Sum">
+<p id="result"></p>
+</body>
+<script>
+    function tinhtong() {
+        let total = 0;
+        for (i=1; i <= document.getElementById("num").value; i++) {
+            total = total + i;
+        }
+        document.getElementById("result").innerHTML = total;
+    }
+</script>
+</html>
